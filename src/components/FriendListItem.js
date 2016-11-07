@@ -19,6 +19,7 @@ export default class FriendListItem extends Component {
           <div><small>xx friends in common</small></div>
         </div>
         <div className={styles.friendActions}>
+          {/* FriendListApp creates actions using Redux function. Passes each action as a prop down to this level. */}
           <button className={`btn btn-default ${styles.btnAction}`} onClick={() => this.props.starFriend(this.props.id)}>
             <i className={classnames('fa', { 'fa-star': this.props.starred }, { 'fa-star-o': !this.props.starred })} />
           </button>

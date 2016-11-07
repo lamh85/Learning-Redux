@@ -24,6 +24,7 @@ export default class FriendListApp extends Component {
       <div className={styles.friendListApp}>
         <h1>The FriendList</h1>
         <AddFriendInput addFriend={actions.addFriend} />
+        {/* actions was created by a Redux function with FriendActions as an argument. */}
         <FriendList friends={friendsById} actions={actions} />
       </div>
     );

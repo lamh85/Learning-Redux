@@ -1,4 +1,8 @@
+// Store all exported values into an object called "types"
 import * as types from '../constants/ActionTypes';
+
+// FriendListApp imports these functions
+// Then uses a Redux function to convert them into actions
 
 export function addFriend(name) {
   return {
